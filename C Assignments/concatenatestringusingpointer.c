@@ -3,13 +3,33 @@
 
 void main()
 {
-	char str1[10] = "viram";
-	char str2[10] = " solanki";
-	char *p1, *p2;
+	char string1[20] = "urvashi";
+	char string2[20] = " kanala";
+	int i=0, j=0;
+	char *str1;
+	char *str2;
+	str1 = string1;
+	str2 = string2;
 	
-	p1 = str1;
-	p2 = str2;
+	//printf("Enter the first string :");
+	//scanf("%s", string1);
+	//printf("Enter the second string :");
+	//scanf("%s", string2);
 	
+	while(string1[i]!='\0')
+	{
+		++str1;
+		i++;
+	}
 	
-	printf("\nString Concatenate :%s", strcat(str1, str2));
+	while(string2[j]!='\0')
+	{
+		*str1 = *str2;
+		str1++;
+		str2++;
+		j++;
+	}
+	
+	printf("The concatenated string is %s", string1);
 }
+  

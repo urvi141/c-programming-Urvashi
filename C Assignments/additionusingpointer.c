@@ -2,7 +2,7 @@
 
 void main()
 {
-	int a,b,sum, sub, multi, div;
+	int a,b,sum;
 	int *p1, *p2;
 	p1 = &a;
 	p2 = &b;
