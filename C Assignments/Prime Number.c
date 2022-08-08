@@ -7,13 +7,13 @@ void main()
 	printf("Enter No. :");
 	scanf("%d", &n);
 	
-	for(i=1; i<=n;i++)
+	for(i=1;i<=n;i++)
 	{
-		if(n % i ==0)
+		if(n % i==0)
 		{
 			flag++;
 		}
-	}
+	} 
 	if(flag == 2)
 	{
 		printf("It is prime No");

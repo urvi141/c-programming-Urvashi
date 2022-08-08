@@ -16,7 +16,7 @@ void main()
 	}
 	else if(year%100==0)
 	{
-		printf("\n%d is  leap year", year);
+		printf("\n%d is leap year", year);
 	}
 	else
 	{
