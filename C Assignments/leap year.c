@@ -14,7 +14,7 @@ void main()
 	{
 		printf("\n%d is leap year", year);
 	}
-	else if(year%100!=0)
+	else if(year%100==0)
 	{
 		printf("\n%d is  leap year", year);
 	}
