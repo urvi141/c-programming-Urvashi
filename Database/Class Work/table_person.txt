@@ -1,0 +1,20 @@
+INSERT INTO person(name,email,address,number) VALUES('Urvashi','urvashi@gmail.com','Kodinar','444');
+INSERT INTO person(name,email,address,number) VALUES('Viram','viram@gmail.com','Veraval','555');
+INSERT INTO person(name,email,address,number) VALUES('Mihir','mihir@gmail.com','Rajkot','666');
+INSERT INTO person(name,email,address,number) VALUES('Milan','milan@gmail.com','Solaj','777');
+UPDATE person SET name="Dipen",email="dipendj@gmail.com",address="Sindhaj" WHERE pid=4
+INSERT INTO person(name,email,address,number) VALUES('Gopal','gopal@gmail.com','Veraval','777');
+INSERT INTO person(name,email,address,number) VALUES('Vanita','vanita@gmail.com','Kutch','888');
+SELECT * FROM person
+SELECT * FROM person WHERE pid=5
+SELECT name,email FROM person
+SELECT email FROM person WHERE name='Viram'
+SELECT address,number FROM person
+DELETE FROM person WHERE pid=4
+DELETE FROM person WHERE pid=2;
+COMMIT;
+DELETE FROM person WHERE pid=2;
+ROLLBACK;
+TRUNCATE TABLE person
+DELETE FROM person
+DROP TABLE person
