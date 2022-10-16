@@ -37,53 +37,30 @@ class Estimation : public Event{
 	     const double h = 18.50, m = 0.40, d = 20.70;
 	     float cost1, cost2, totalcost,totalfood, avg, finalcost, damt;
 	     
-		void get_estimate()
+		void get_detail()
 		{
-		 cout<<"****************Event estimate for : "<<fname<<" "<<lname<<"********************"<<endl<<endl;	
-		 ser = n / x;	                               
+		    cout<<"****************Event estimate for : "<<fname<<" "<<lname<<"********************"<<endl<<endl;	
+		    ser = n / x;
+		    cost1 = (min/60)*h;
+	   	    cost2 = (min%60)*m;		   	
+		    totalcost = cost1 + cost2;
+		    totalfood = n * d;
+		    avg = totalfood / n;
+		    finalcost = totalfood + (totalcost * ser);
+		    damt = finalcost * 0.25;	                               
 		}
 										             
-     	void showestimate()  
+     	void show_detail()  
 		{
 			cout<<"Number of Server : "<<ser<<endl;
-		}
-		
-		void get_cost()
-		{
-		   	cost1 = (min/60)*h;
-		   	cost2 = (min%60)*m;
-		   	totalcost = cost1 + cost2;
-		}
-		
-		void show_cost()
-		{
 			cout<<"The cost for Servers : "<<totalcost<<endl;
-		}
-		
-		void get_food()
-		{
-			totalfood = n * d;
-			avg = totalfood / n;
-			finalcost = totalfood + (totalcost * ser);
-		}
-		
-		void show_food()
-		{
 			cout<<"The cost for Food is : "<<totalfood<<endl;
 			cout<<"Average cost per person : "<<avg<<endl;
 			cout<<"Total cost is : "<<finalcost<<endl;
-		}
-		
-		void get_deposit()
-		{
-			damt = finalcost * 0.25;
-		}
-		
-		void show_deposit()
-		{
 			cout<<"Please deposit a 25% deposit to reserve the event"<<endl;
 			cout<<"The deposit needed is : "<<damt<<endl;
 		}
+		
 };
 
 int main()
@@ -91,13 +68,7 @@ int main()
 	Estimation e;
 	e.get_name();
 	e.showname();
-	e.get_estimate();
-	e.showestimate();
-	e.get_cost();
-	e.show_cost();
-	e.get_food();
-	e.show_food();
-	e.get_deposit();
-	e.show_deposit();
+	e.get_detail();
+	e.show_detail();
 	return 0;
 }
