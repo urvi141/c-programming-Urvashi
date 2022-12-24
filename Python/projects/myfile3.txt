@@ -1,0 +1,13 @@
+
+Name : urvashi
+ Gender : female
+ Age : 23
+ Product : ring
+ Gram : 5
+ Gold Price : 9000
+ Total rate : 45000
+ Making charges : 700
+ Total charges : 45700
+ Total amt: 90700
+ Dis amt: 90000
+ Net amt: 700
