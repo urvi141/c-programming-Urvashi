@@ -1,0 +1,9 @@
+
+Current date & time : 2022-12-31 14:48:01.185926
+ Python E - Note Title : Python Introduction
+ Python E - Note Content : Python programming language
+ Note Generator : Anjali Patel
+Current date & time : 2022-12-31 14:49:11.842363
+ Python E - Note Title : Tech Fest Event
+ Python E - Note Content : Tech Fest event coming soon....roll your sleeve and upgrade yourself
+ Note Generator : Anjali patel
