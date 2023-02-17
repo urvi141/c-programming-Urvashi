@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>About Django</h1>
+     <h1><a href="{% url 'pytho' %}">Python</a></h1>
+    <h1><a href="{% url 'java' %}">Java</a></h1>
+    <h1><a href="{% url 'android' %}">Android</a></h1>
+    <h1><a href="{% url 'dart' %}">Dart</a></h1>
+    <h1><a href="{% url 'Cpp' %}">Cpp</a></h1> 
+    <p>Most powerfull framework</p>
+
+    <h1>Click here : <a href="{% url 'home' %}">back page</a></h1>
+    <h1>Go back : <a href="{% url 'pytho' %}">next</a></h1>
+</body>
+</html>
